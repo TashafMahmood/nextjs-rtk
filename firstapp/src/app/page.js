@@ -6,7 +6,6 @@ export default function Home() {
     <main className={styles.main}>
       <h1>Homepage</h1>
       <User username={'Tashaf'} />
-      <User username={'Atique'} />
       <button onClick={() => alert("hello")}>Click me</button>
     </main>
   )
