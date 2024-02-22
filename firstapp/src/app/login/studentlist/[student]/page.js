@@ -2,7 +2,6 @@
 import React from 'react'
 
 const Student = ({params}) => {
-    console.log(params,'j')
   return (
     <div>
       <h1>Student Details</h1>
