@@ -1,4 +1,5 @@
 import React from 'react'
+import TestButton from './TestButton'
 
 const fetchProduct = async () => {
     let data = await fetch("https://dummyjson.com/products")
@@ -15,6 +16,7 @@ const ServerProductList = async () => {
                 products?.map((item, id) => (
                     <>
                         <h3>Name : {item.title}</h3>
+                        <TestButton price={item.price} />
                     </>
                 ))
             }
