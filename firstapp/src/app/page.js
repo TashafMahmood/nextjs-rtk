@@ -17,6 +17,9 @@ export default function Home() {
       <Link href={'/productlist'}>Go to Products</Link>
       <br />
       <br />
+      <Link href={'/serverproductlist'}>Go to Server Side Products</Link>
+      <br />
+      <br />
       <button onClick={() => router.push('/login')}>Go to login</button>
     </main>
   )
