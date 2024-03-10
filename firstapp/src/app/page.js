@@ -4,6 +4,12 @@ import style from './page.module.css'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import img1 from '../../public/vercel.svg'
+import { Roboto } from 'next/font/google'
+const roboto = Roboto({
+  weight: '100',
+  display: "swap",
+  subsets: ['latin']
+})
 
 export default function Home() {
   const router = useRouter()
@@ -28,6 +34,7 @@ export default function Home() {
       <button onClick={() => router.push('/login')}>Go to login</button>
       <br />
       <br />
+      <h1 className={roboto.className}>Font with Nextjs font feature</h1>
 
     </main>
   )
