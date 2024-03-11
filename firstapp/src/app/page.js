@@ -34,6 +34,9 @@ export default function Home() {
       <Link href={'/ssg'}>Static Site Generation</Link>
       <br />
       <br />
+      <Link href={'/api/users'}>Fetch Api</Link>
+      <br />
+      <br />
       <button onClick={() => router.push('/login')}>Go to login</button>
       <br />
       <br />
