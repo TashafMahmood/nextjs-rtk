@@ -31,6 +31,9 @@ export default function Home() {
       <Link href={'/serverproductlist'}>Go to Server Side Products</Link>
       <br />
       <br />
+      <Link href={'/ssg'}>Static Site Generation</Link>
+      <br />
+      <br />
       <button onClick={() => router.push('/login')}>Go to login</button>
       <br />
       <br />
