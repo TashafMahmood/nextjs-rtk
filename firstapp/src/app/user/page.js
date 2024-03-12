@@ -1,6 +1,7 @@
 import React from 'react'
 import { getUsers } from '../../../services/getUsers'
 import Link from 'next/link';
+import styles from '../style.module.css'
 
 export const getData = async () => {
     let data = await fetch("http://localhost:3000/api/users");
@@ -16,7 +17,10 @@ const Page = async () => {
             {
                 users.map((user, id) => (
                     <>
-                        <div><Link href={`user/${user.id}`}>{user.name}</Link></div>
+                        <div className={styles.user_item}>
+                            <span><Link href={`user/${user.id}`}>{user.name}</Link></span>
+                            <span><Link href={`user/${user.id}/updateuser`}>{"Edit"}</Link></span>
+                        </div>
                     </>
                 ))
             }
