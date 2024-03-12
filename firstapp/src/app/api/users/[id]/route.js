@@ -15,3 +15,11 @@ export async function PUT(request, content) {
     console.log(id)
     return NextResponse.json({ result: payload })
 }
+
+export function DELETE(request, content) {
+    let id = content.params.id
+    if (id) {
+        return NextResponse.json({ result: "User deleted successfully", success: true }, { status: 200 })
+    }
+    return NextResponse.json({ result: "User not found", success: false }, { status: 400 })
+}
