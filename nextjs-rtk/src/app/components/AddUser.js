@@ -8,8 +8,8 @@ const AddUser = () => {
     const [user, setUser] = useState('')
     const dispatch = useDispatch()
     const addUserFunc = () => {
-        console.log(user)
         dispatch(addUser(user))
+        setUser('')
     }
     return (
         <div className='add-user'>
